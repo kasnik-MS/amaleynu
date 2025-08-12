@@ -143,7 +143,7 @@
             color: white;
         }
 
-        /* === שינוי כאן: עיצוב סקשן "צור קשר" === */
+        /* --- Contact Section --- */
         #contact {
             text-align: center;
         }
@@ -181,7 +181,6 @@
         .developer-credit a:hover {
             text-decoration: underline;
         }
-        /* --- סוף השינוי --- */
         
         .email-link {
             display: inline-flex;
@@ -270,7 +269,7 @@
             </div>
         </section>
         
-        <!-- === סקשן "צור קשר" חדש === -->
+        <!-- Contact Section -->
         <section id="contact">
              <div class="container" data-aos="fade-up">
                 <h2>צרו קשר</h2>
@@ -300,7 +299,7 @@
     <script>
       AOS.init({
         duration: 800,
-        once: true,
+        once: false, /* === זה השינוי! האנימציה תפעל בכל גלילה === */
         offset: 100
       });
     </script>
