@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בחור כארזים-עמלינו (ע"ר) | דף נחיתה</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        /* --- Google Fonts --- */
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+
+        /* --- Global Styles --- */
+        :root {
+            --primary-color: #002D62; /* Navy Blue */
+            --secondary-color: #007BFF; /* Brighter Blue */
+            --accent-color: #D4AF37; /* Old Gold */
+            --text-color: #333;
+            --bg-color: #f8f9fa; /* Slightly off-white background */
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            text-align: right;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+        
+        /* --- Header & Hero Section --- */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('רקע.JPG') no-repeat center center/cover;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin: 0;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 15px 0 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            background-color: #eac65d; /* Lighter gold for hover */
+        }
+
+        /* --- General Section Styles --- */
+        #about, #what-we-do, #contact {
+            background-color: #ffffff;
+        }
+
+        #about .container {
+            max-width: 800px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* --- What We Do Section --- */
+        .activities-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .activity-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+            transition: transform 0.3s ease;
+            flex: 0 1 320px;
+            box-sizing: border-box; 
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .activity-card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        /* --- Join Us Section --- */
+        #join-us {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+        }
+        
+        #join-us h2, #join-us h3 {
+            color: white;
+        }
+
+        /* === שינוי כאן: עיצוב סקשן "צור קשר" === */
+        #contact {
+            text-align: center;
+        }
+        #contact p {
+            max-width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        #contact .email-link {
+            font-size: 1.4rem;
+        }
+        
+        /* --- Footer --- */
+        footer {
+            background-color: #1f2937; /* Darker, more neutral footer color */
+            color: #bbb;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        .developer-credit {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .developer-credit a {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        .developer-credit a:hover {
+            text-decoration: underline;
+        }
+        /* --- סוף השינוי --- */
+        
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-direction: row-reverse;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .email-link svg {
+            width: 1.2em;
+            height: 1.2em;
+            fill: var(--accent-color);
+        }
+
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2rem; }
+            .hero p { font-size: 1.2rem; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>בחור כארזים-עמלינו (ע"ר)</h1>
+            <p>מעצימים נוער, מחזקים קהילה, יוצרים עתיד טוב יותר</p>
+            <a href="#join-us" class="cta-button">היו שותפים לעשייה!</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container" data-aos="fade-up">
+                <h2>מי אנחנו?</h2>
+                <p>
+                    "בחור כארזים-עמלינו" היא עמותה הפועלת מתוך אמונה בכוחו של הנוער ובחשיבות הסיוע לקהילה. כשם שהארז ניצב איתן וגבוה, כך אנו שואפים להעצים את בני הנוער ולסייע להם לצמוח ולממש את מלוא הפוטנציאל שלהם. באמצעות פעילות ענפה ותמיכה מסורה, אנו יוצרים יחד עתיד טוב יותר.
+                </p>
+            </div>
+        </section>
+
+        <!-- What We Do Section -->
+        <section id="what-we-do">
+            <div class="container">
+                <h2 data-aos="fade-up">מה אנחנו עושים?</h2>
+                <div class="activities-grid">
+                    <div class="activity-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>חינוך ולימודים</h3>
+                        <p>אנו מסייעים במציאת מסגרות לימוד, מעניקים עזרה לימודית ומלגות עידוד, ופועלים למניעת נשירה מהישיבות כדי לאפשר לכל נער להצליח.</p>
+                    </div>
+                    <div class="activity-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>פעילויות העשרה ופנאי</h3>
+                        <p>אנו מממנים ימי כיף ונופש עבור נוער נזקק ומקיימים פעילויות משותפות לנוער ובוגרים, לחיזוק הקשרים ותחושת השייכות.</p>
+                    </div>
+                    <div class="activity-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3>קידום תעסוקתי</h3>
+                        <p>אנו מסייעים לבני נוער מתבגרים למצוא תעסוקה ראשונה, צעד משמעותי בדרך לעצמאותם הכלכלית ורכישת מיומנויות חשובות.</p>
+                    </div>
+                    <div class="activity-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>סיוע לקהילה</h3>
+                        <p>אנו רואים חשיבות עליונה בסיוע לנזקקים ומעניקים תמיכות כספיות לקראת החגים ומחלקים מצות בפסח, מתוך רצון לשמח כל בית בישראל.</p>
+                    </div>
+                    <div class="activity-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>מסגרת לבין הזמנים</h3>
+                        <p>מסגרת לימודית עם כיבוד מפנק, ע"מ לעודד את לימוד התורה גם ביומי דפגרא.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section id="join-us" data-aos="zoom-in-up">
+            <div class="container">
+                <h2>הצטרפו אלינו!</h2>
+                <h3>התרומה שלכם היא הכוח שלנו להמשיך ולפעול.</h3>
+                <p>יחד, נוכל להמשיך ולתמוך בנוער, לחזק את הקהילה ולהעניק תמיכה למי שזקוק לכך.</p>
+                <br>
+                <a href="https://www.matara.pro/nedarimplus/online/?mosad=7009012&groupe=amaleynu&groupelock=1" class="cta-button">לתרומה בטוחה לחצו כאן</a>
+            </div>
+        </section>
+        
+        <!-- === סקשן "צור קשר" חדש === -->
+        <section id="contact">
+             <div class="container" data-aos="fade-up">
+                <h2>צרו קשר</h2>
+                <p>
+                    נשמח לשמוע מכם! לכל שאלה, הצעה, או רצון לשיתוף פעולה, אתם מוזמנים לפנות אלינו בכתובת המייל:
+                </p>
+                <a href="mailto:amaleynu@gmail.com" class="email-link" style="color: var(--primary-color);">
+                    amaleynu@gmail.com
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="developer-credit">
+                אתר זה נבנה ע"י <strong>kasnik</strong> &copy; כל הזכויות שמורות<br>
+                <a href="mailto:kasnikms+amal@gmail.com">kasnikms@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+      });
+    </script>
+
+</body>
+</html>
